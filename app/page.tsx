@@ -358,6 +358,9 @@ export default function FiveReasons() {
           <p className="fr-more">
             Want the full rundown? <a href="/journal">See everything inside the journal →</a>
           </p>
+          <p className="fr-more">
+            Not ready yet? <a href="/free">Get the free 3-day starter and printable worksheet →</a>
+          </p>
         </section>
       </main>
 
@@ -370,6 +373,9 @@ export default function FiveReasons() {
           <p>
             If you&apos;re thinking about harming yourself, in the US call or text <a href="tel:988">988</a> (Suicide
             &amp; Crisis Lifeline), or contact your local emergency number.
+          </p>
+          <p>
+            <a href="/guides">Breakup guides</a> · <a href="/free">Free resources</a> · <a href="/journal">What&apos;s inside</a>
           </p>
           <p>© {new Date().getFullYear()} digitaldisconnect.shop</p>
         </div>

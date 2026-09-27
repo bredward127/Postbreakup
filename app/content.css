@@ -1,0 +1,54 @@
+/* Guides, free resources and tools. Builds on five-reasons.css tokens. */
+.fr-header-wide { max-width: 1040px; }
+.site-nav { display: flex; align-items: center; gap: 16px; font-size: 14px; font-weight: 600; }
+.site-nav a:not(.fr-btn) { text-decoration: none; color: var(--fr-ink); }
+@media (max-width: 480px) {
+  .site-nav { gap: 12px; }
+  .site-nav a[href="/free"], .hide-sm { display: none; }
+  .fr-header-wide .fr-logo { font-size: 13px; letter-spacing: .04em; }
+  .fr-header-wide .fr-btn-sm { text-transform: capitalize; }
+}
+.footer-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 16px; }
+.footer-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+
+.crumbs { font-size: 13px; color: var(--fr-muted); padding-top: 24px; }
+.crumbs a { color: var(--fr-muted); }
+.article { padding-bottom: 48px; }
+.article h1 { margin-top: 8px; }
+.article h2 { font-family: var(--fr-display); font-weight: 700; font-size: clamp(24px, 6vw, 30px); line-height: 1.15; margin: 40px 0 12px; }
+.article ul, .article ol { padding-left: 22px; margin: 0 0 1.1em; }
+.article li { margin-bottom: 6px; }
+.article-meta { font-size: 14px; color: var(--fr-muted); margin-bottom: 24px !important; }
+.faq-block { margin-top: 40px; }
+.faq-block h3 { font-size: 17px; margin: 18px 0 6px; }
+
+.journal-cta { background: var(--fr-surface); border: 1px solid var(--fr-line); border-left: 4px solid var(--fr-accent); border-radius: var(--fr-radius); padding: 22px 20px; margin: 36px 0; }
+.journal-cta-h { font-family: var(--fr-display); font-weight: 700; font-size: 22px; line-height: 1.2; margin-bottom: 8px !important; }
+.journal-cta .fr-btn { margin-top: 4px; }
+
+.card-grid { display: grid; gap: 12px; margin: 16px 0 40px; }
+.link-card { display: block; background: var(--fr-surface); border: 1px solid var(--fr-line); border-radius: var(--fr-radius); padding: 18px 20px; text-decoration: none; color: var(--fr-ink); transition: border-color .15s ease; }
+.link-card:hover { border-color: var(--fr-accent); }
+.link-card strong { display: block; font-family: var(--fr-display); font-size: 19px; line-height: 1.25; margin-bottom: 4px; }
+.link-card span { font-size: 14.5px; color: var(--fr-muted); }
+.link-card .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--fr-accent-ink); margin-bottom: 6px; }
+@media (min-width: 720px) { .card-grid.two { grid-template-columns: 1fr 1fr; } }
+
+.page-intro { padding: 36px 0 8px; }
+.cat-h { font-family: var(--fr-display); font-weight: 700; font-size: 24px; margin: 32px 0 4px; }
+
+/* Tools */
+.tool { background: var(--fr-surface); border: 1px solid var(--fr-line); border-radius: 20px; padding: 24px 20px; margin: 20px 0 32px; }
+.tool label { display: block; font-weight: 600; margin-bottom: 6px; }
+.tool input[type="date"] { font: inherit; padding: 12px 14px; border: 1px solid var(--fr-line); border-radius: 12px; width: 100%; max-width: 280px; background: #fff; color: var(--fr-ink); }
+.tool-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.tool-btn { font: inherit; font-weight: 600; min-height: 48px; padding: 0 20px; border-radius: 999px; border: 1.5px solid var(--fr-ink); background: transparent; color: var(--fr-ink); cursor: pointer; }
+.tool-btn.primary { background: var(--fr-dark); color: #fff; }
+.tool-btn[aria-pressed="true"] { background: var(--fr-dark); color: #fff; }
+.big-count { font-family: var(--fr-display); font-weight: 700; font-size: 84px; line-height: 1; margin: 18px 0 4px; }
+.milestones { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; padding: 0; list-style: none; }
+.milestones li { font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 999px; background: #f1ebe3; color: var(--fr-muted); }
+.milestones li.hit { background: var(--fr-accent-fill); color: #fff; }
+.quiz-q { font-family: var(--fr-display); font-weight: 700; font-size: 22px; line-height: 1.25; margin-bottom: 14px !important; }
+.quiz-progress { font-size: 13px; color: var(--fr-muted); margin-bottom: 8px !important; }
+.result-h { font-family: var(--fr-display); font-weight: 700; font-size: 26px; line-height: 1.2; }

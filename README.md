@@ -28,3 +28,14 @@ Add them to the `reviews` array at the top of `app/page.tsx`. The section stays 
 npm install
 npm run dev
 ```
+
+## Content and free resources
+
+- `content/articles/` — 23 SEO guides (rendered at `/guides/[slug]`, with Article/Breadcrumb/FAQ structured data). Add an article by appending to one of the category files; `expansions.ts` holds extra sections per slug.
+- `/free` — free resources hub: printable worksheet and 3-day starter (`public/free/*.pdf`, built by `npm run journal`), a no-contact counter and a "Should I text my ex?" check.
+- `app/sitemap.ts` and `app/robots.ts` — canonical host is `https://www.digitaldisconnect.shop` (`lib/site.ts`).
+
+## Skills
+
+- `.claude/skills/domain-to-landing-page` — the step-by-step workflow: domain → product → page format (stop) → visual reference (stop) → build → preview → production on approval → SEO growth.
+- `.claude/skills/landing-page-builder` — the original ClickDose blueprint skill.

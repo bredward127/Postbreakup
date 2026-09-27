@@ -138,5 +138,28 @@ await page.emulateMedia({ media: "screen" });
 const sections = await page.$$("section.page");
 await sections[0].screenshot({ path: "public/journal-cover.png" });
 await sections[3].screenshot({ path: "public/journal-day1.png" }); // cover, how-to, week 1, day 1
+// Free lead magnets (public): the worksheet, and a 3-day starter sample.
+const doc = (pages) => `<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${pages.join("")}</body></html>`;
+const starterEnd = `
+<section class="page body">
+  <div class="eyebrow">That's the first three days</div>
+  <h2>Want the <em>other 27?</em></h2>
+  <p>The full No-Contact Journal takes you through all four weeks: stop the bleeding, tell the truth, take your time back, and build what's next.</p>
+  <ul><li>30 daily pages and 90 guided prompts</li><li>The "Before you text them" page (×2)</li><li>Daily no-contact check-in and mood tracker</li></ul>
+  <p><strong>Get it at digitaldisconnect.shop</strong></p>
+  <p class="small" style="margin-top:22pt">In the US, call or text 988 (Suicide &amp; Crisis Lifeline) any time. Elsewhere, contact your local emergency number or a crisis line in your country.</p>
+</section>`;
+mkdirSync("public/free", { recursive: true });
+const free = [
+  ["public/free/before-you-text-them-worksheet.pdf", [btt]],
+  ["public/free/no-contact-journal-3-day-starter.pdf", [cover, howTo, phasePage(phases[0], 0), ...days.slice(0, 3).map(dayPage), btt, starterEnd]],
+];
+for (const [path, pages] of free) {
+  await page.setContent(doc(pages), { waitUntil: "networkidle" });
+  await page.evaluate(() => document.fonts.ready);
+  await page.pdf({ path, format: "Letter", printBackground: true });
+  console.log(`Built ${path} (${pages.length} pages)`);
+}
+
 await browser.close();
 console.log(`Built private/no-contact-journal.pdf (${ordered.length} pages)`);
