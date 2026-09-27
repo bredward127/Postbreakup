@@ -52,3 +52,10 @@
 .quiz-q { font-family: var(--fr-display); font-weight: 700; font-size: 22px; line-height: 1.25; margin-bottom: 14px !important; }
 .quiz-progress { font-size: 13px; color: var(--fr-muted); margin-bottom: 8px !important; }
 .result-h { font-family: var(--fr-display); font-weight: 700; font-size: 26px; line-height: 1.2; }
+
+.pdf-dl { display: block; background: var(--fr-dark); color: #f6f0e7; border-radius: var(--fr-radius); padding: 16px 20px; margin: 8px 0 8px; text-decoration: none; }
+.pdf-dl .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--fr-peach); margin-bottom: 4px; }
+.pdf-dl strong { display: block; font-size: 16px; }
+.pdf-dl span:last-child { font-size: 13.5px; color: #cfc6bd; }
+.card-links { display: flex !important; gap: 16px; margin-top: 10px; font-size: 14.5px; font-weight: 600; }
+.card-links a { color: var(--fr-accent-ink); }

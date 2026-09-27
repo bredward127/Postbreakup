@@ -31,7 +31,7 @@ npm run dev
 
 ## Content and free resources
 
-- `content/articles/` — 23 SEO guides (rendered at `/guides/[slug]`, with Article/Breadcrumb/FAQ structured data). Add an article by appending to one of the category files; `expansions.ts` holds extra sections per slug.
+- `content/articles/` — 38 SEO guides (15 with free PDFs: `npm run guides` → `public/free/guides/`) (rendered at `/guides/[slug]`, with Article/Breadcrumb/FAQ structured data). Add an article by appending to one of the category files; `expansions.ts` holds extra sections per slug.
 - `/free` — free resources hub: printable worksheet and 3-day starter (`public/free/*.pdf`, built by `npm run journal`), a no-contact counter and a "Should I text my ex?" check.
 - `app/sitemap.ts` and `app/robots.ts` — canonical host is `https://www.digitaldisconnect.shop` (`lib/site.ts`).
 

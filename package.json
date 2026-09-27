@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "journal": "node scripts/build-journal.mjs"
+    "journal": "node scripts/build-journal.mjs",
+    "guides": "tsx scripts/build-guides.ts"
   },
   "engines": {
     "node": ">=20"
@@ -25,6 +26,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "playwright": "^1.63.0",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }

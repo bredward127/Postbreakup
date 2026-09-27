@@ -10,6 +10,9 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
+// Only known slugs; anything else is a plain 404.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
 }
@@ -96,6 +99,13 @@ export default async function GuidePage({ params }: Props) {
             {p}
           </p>
         ))}
+        {a.pdf && (
+          <a className="pdf-dl" href={`/free/guides/${a.slug}.pdf`} download>
+            <span className="tag">Free PDF</span>
+            <strong>Download this guide: {a.pdf.title}</strong>
+            <span>Printable, with a notes page. No sign-up.</span>
+          </a>
+        )}
         {a.sections.slice(0, mid).map((s) => (
           <SectionBlock key={s.h} s={s} />
         ))}

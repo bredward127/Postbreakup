@@ -17,4 +17,6 @@ export type Article = {
   sections: Section[];
   faq?: { q: string; a: string }[];
   related: string[]; // slugs
+  /** When set, a free PDF of this guide is built to /free/guides/<slug>.pdf */
+  pdf?: { title: string; subtitle: string };
 };

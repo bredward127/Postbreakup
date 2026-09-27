@@ -22,3 +22,10 @@ Use after the page is built, when the user wants organic traffic.
 - A canonical URL on every page; `metadataBase` on the canonical host.
 - Verify: every sitemap URL returns 200, pages have 0 horizontal overflow at 390px, and tools work (click through them).
 - After going live: submit the sitemap in Google Search Console (the user has to verify the domain there).
+
+## Using trend-research ideas (e.g. a "PDF Trend Finder" export)
+- Treat each idea as one guide: target its example queries in the title, headings and FAQ.
+- Ship it twice: as an article (search traffic) and as a free printable PDF built from the same content (lead magnet), with a notes page and a final page pointing to the product.
+- Don't publish the tool's search-volume or opportunity numbers; they're for choosing topics.
+- Add a few ideas of your own that fill obvious gaps in the cluster.
+- In this repo: set `pdf: { title, subtitle }` on an article, then run `npm run guides` to build `public/free/guides/<slug>.pdf`.

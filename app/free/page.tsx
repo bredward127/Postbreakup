@@ -4,6 +4,7 @@ import "@fontsource/fraunces/700.css";
 import "../five-reasons.css";
 import "../content.css";
 import { SiteHeader, SiteFooter, JournalCta } from "@/components/SiteChrome";
+import { articles } from "@/content/articles";
 
 export const metadata: Metadata = {
   title: "Free Breakup Resources: Printables, No-Contact Counter and More",
@@ -73,6 +74,25 @@ export default function FreeResources() {
               </Link>
             ),
           )}
+        </div>
+        <h2 className="cat-h">Free PDF guides</h2>
+        <p>Printable guides on the hardest parts of no contact. Each one has a notes page at the end.</p>
+        <div className="card-grid two">
+          {articles
+            .filter((a) => a.pdf)
+            .map((a) => (
+              <div key={a.slug} className="link-card">
+                <span className="tag">Free PDF</span>
+                <strong>{a.pdf!.title}</strong>
+                <span>{a.pdf!.subtitle}</span>
+                <span className="card-links">
+                  <a href={`/free/guides/${a.slug}.pdf`} download>
+                    Download PDF
+                  </a>
+                  <Link href={`/guides/${a.slug}`}>Read online</Link>
+                </span>
+              </div>
+            ))}
         </div>
         <JournalCta heading="Liked the 3-day starter? Get all 30 days." />
       </main>
