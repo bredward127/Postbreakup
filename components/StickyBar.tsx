@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Appears once the hero scrolls away; hides again when the offer box is on screen.
-export default function StickyBar({ label, price }: { label: string; price: string }) {
+export default function StickyBar({ label, price, cta = "Get it now" }: { label: string; price: string; cta?: string }) {
   const [heroGone, setHeroGone] = useState(false);
   const [offerVisible, setOfferVisible] = useState(false);
 
@@ -29,7 +29,7 @@ export default function StickyBar({ label, price }: { label: string; price: stri
         <span>{price} · instant PDF</span>
       </div>
       <a href="#offer" className="btn btn-sm" tabIndex={show ? 0 : -1}>
-        Get it now
+        {cta}
       </a>
     </div>
   );
