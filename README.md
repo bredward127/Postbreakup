@@ -1,4 +1,4 @@
-# postbrekup.shop — The No-Contact Journal
+# digitaldisconnect.shop — The No-Contact Journal
 
 Sales page and checkout for **The No-Contact Journal**, a 30-day guided breakup-recovery journal sold as a $17 PDF.
 

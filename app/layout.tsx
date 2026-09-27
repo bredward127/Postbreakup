@@ -8,7 +8,7 @@ import "@fontsource/inter/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://postbrekup.shop"),
+  metadataBase: new URL("https://digitaldisconnect.shop"),
   title: "The No-Contact Journal: a 30-day guided journal for after a breakup",
   description:
     "Don't text them. Write it here instead. 30 days of guided prompts for the first month after a breakup. Instant printable PDF, $17.",

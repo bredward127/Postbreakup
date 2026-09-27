@@ -62,7 +62,7 @@ const cover = `
     <h1>The No-Contact<br/><em>Journal</em></h1>
     <p class="sub">Don't text them. Write it here instead. Thirty days of prompts for the first month after a breakup.</p>
   </div>
-  <div class="foot">postbrekup.shop</div>
+  <div class="foot">digitaldisconnect.shop</div>
 </section>`;
 
 const howTo = `
@@ -111,7 +111,7 @@ const closing = `
   <p>If some days still feel heavy, that's normal. Go back to the prompts that helped most, and use the "Before you text them" page for as long as you need it.</p>
   <p>If you're still struggling after a month, talking to a counsellor or therapist can help. Needing support isn't a failure. It's what people do after something hard.</p>
   <p class="small" style="margin-top:22pt">In the US, call or text 988 (Suicide &amp; Crisis Lifeline) any time. Elsewhere, contact your local emergency number or a crisis line in your country.</p>
-  <p class="small" style="margin-top:30pt">© The No-Contact Journal · postbrekup.shop · For personal use. Please don't redistribute.</p>
+  <p class="small" style="margin-top:30pt">© The No-Contact Journal · digitaldisconnect.shop · For personal use. Please don't redistribute.</p>
 </section>`;
 
 const ordered = [cover, howTo];

@@ -428,7 +428,7 @@ export default function JournalSalesPage() {
             US call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline), or contact your local emergency
             number.
           </p>
-          <p className="small">© {new Date().getFullYear()} postbrekup.shop</p>
+          <p className="small">© {new Date().getFullYear()} digitaldisconnect.shop</p>
         </div>
       </footer>
 

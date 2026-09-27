@@ -371,7 +371,7 @@ export default function FiveReasons() {
             If you&apos;re thinking about harming yourself, in the US call or text <a href="tel:988">988</a> (Suicide
             &amp; Crisis Lifeline), or contact your local emergency number.
           </p>
-          <p>© {new Date().getFullYear()} postbrekup.shop</p>
+          <p>© {new Date().getFullYear()} digitaldisconnect.shop</p>
         </div>
       </footer>
 
